@@ -19,16 +19,16 @@ const Layout = ({ children }) => {
     >
       {/* metadata */}
       <Head>
-        <title>Ethan Smith | Portfolio</title>
+        <title>Rama Prayaga | Portfolio</title>
         <meta
           name="description"
-          content="Ethan Smith is a Full-stack web developer with 10+ years of experience."
+          content="AI Engineer specializing in real-time AI systems, LLM-powered applications, multimodal intelligence, scalable automation, healthcare AI, cybersecurity, robotics, and cloud computing. Driven to build intelligence into real-world systems."
         />
         <meta
           name="keywords"
-          content="react, next, nextjs, html, css, javascript, js, modern-ui, modern-ux, portfolio, framer-motion, 3d-website, particle-effect"
+          content="react, next, nextjs, html, css, javascript, js, portfolio, AI, Machine Learning, Generative AI, LLMs, Computer Vision, Data Engineering, Python"
         />
-        <meta name="author" content="Sanidhya Kumar Verma" />
+        <meta name="author" content="Rama Prayaga" />
         <meta name="theme-color" content="#f13024" />
       </Head>
 

@@ -18,24 +18,32 @@ const Home = () => {
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="h1"
+            className="h1 mb-4 xl:max-w-[600px]"
           >
-            Transforming Ideas <br /> Into{" "}
-            <span className="text-accent">Digital Reality</span>
+            Designing Intelligent & <br />{" "}
+            <span className="text-accent">Autonomous Systems.</span>
           </motion.h1>
 
-          {/* subtitle */}
+          {/* specialties subtitle */}
           <motion.p
             variants={fadeIn("down", 0.3)}
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16"
+            className="text-xs md:text-sm font-semibold text-accent max-w-sm xl:max-w-[550px] mx-auto xl:mx-0 mb-4 leading-relaxed"
           >
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate,
-            exercitationem harum, quia nulla temporibus deleniti libero veniam
-            vero beatae numquam ducimus illum ab similique ipsam tempore fugit
-            quod laudantium debitis.
+            𝐀𝐈 𝐄𝐧𝐠𝐢𝐧𝐞𝐞𝐫 | 𝐆𝐞𝐧𝐀𝐈 & 𝐌𝐋 𝐒𝐲𝐬𝐭𝐞𝐦𝐬 | 𝐕𝐞𝐫𝐭𝐞𝐱 𝐀𝐈 | 𝐃𝐚𝐭𝐚 𝐏𝐢𝐩𝐞𝐥𝐢𝐧𝐞𝐬 | 𝐁𝐮𝐢𝐥𝐝𝐢𝐧𝐠 𝐀𝐈 𝐀𝐩𝐩𝐥𝐢𝐜𝐚𝐭𝐢𝐨𝐧𝐬 𝐟𝐨𝐫 𝐒𝐮𝐬𝐭𝐚𝐢𝐧𝐚𝐛𝐢𝐥𝐢𝐭𝐲 & 𝐅𝐚𝐬𝐡𝐢𝐨𝐧 𝐓𝐞𝐜𝐡
+          </motion.p>
+
+          {/* description */}
+          <motion.p
+            variants={fadeIn("down", 0.4)}
+            initial="hidden"
+            animate="show"
+            exit="hidden"
+            className="max-w-sm xl:max-w-[500px] mx-auto xl:mx-0 mb-8 leading-relaxed text-white/70 text-xs md:text-sm font-light"
+          >
+            𝐈 𝐚𝐦 𝐚𝐧 𝐀𝐈 𝐄𝐧𝐠𝐢𝐧𝐞𝐞𝐫 𝐰𝐨𝐫𝐤𝐢𝐧𝐠 𝐚𝐭 𝐭𝐡𝐞 𝐢𝐧𝐭𝐞𝐫𝐬𝐞𝐜𝐭𝐢𝐨𝐧 𝐨𝐟 𝐝𝐚𝐭𝐚 𝐞𝐧𝐠𝐢𝐧𝐞𝐞𝐫𝐢𝐧𝐠, 𝐦𝐚𝐜𝐡𝐢𝐧𝐞 𝐥𝐞𝐚𝐫𝐧𝐢𝐧𝐠, 𝐚𝐧𝐝 𝐩𝐫𝐨𝐝𝐮𝐜𝐭𝐢𝐨𝐧-𝐠𝐫𝐚𝐝𝐞 𝐀𝐈 𝐬𝐲𝐬𝐭𝐞𝐦𝐬, 𝐜𝐮𝐫𝐫𝐞𝐧𝐭𝐥𝐲 𝐜𝐨𝐧𝐭𝐫𝐢𝐛𝐮𝐭𝐢𝐧𝐠 𝐭𝐨 𝐎𝐩𝐞𝐧𝐒𝐭𝐫𝐞𝐞𝐭𝐌𝐚𝐩-𝐛𝐚𝐬𝐞𝐝 𝐞𝐜𝐨𝐬𝐲𝐬𝐭𝐞𝐦𝐬 𝐛𝐲 𝐛𝐮𝐢𝐥𝐝𝐢𝐧𝐠 𝐬𝐜𝐚𝐥𝐚𝐛𝐥𝐞 𝐝𝐚𝐭𝐚 𝐩𝐢𝐩𝐞𝐥𝐢𝐧𝐞𝐬 𝐭𝐡𝐚𝐭 𝐢𝐧𝐭𝐞𝐠𝐫𝐚𝐭𝐞 𝐛𝐚𝐜𝐤𝐞𝐧𝐝 𝐚𝐧𝐝 𝐟𝐫𝐨𝐧𝐭𝐞𝐧𝐝 𝐬𝐲𝐬𝐭𝐞𝐦𝐬.
           </motion.p>
 
           {/* btn */}
@@ -43,7 +51,7 @@ const Home = () => {
             <ProjectsBtn />
           </div>
           <motion.div
-            variants={fadeIn("down", 0.4)}
+            variants={fadeIn("down", 0.5)}
             initial="hidden"
             animate="show"
             exit="hidden"
@@ -72,7 +80,7 @@ const Home = () => {
           animate="show"
           exit="hidden"
           transition={{ duration: 1, ease: "easeInOut" }}
-          className="w-full h-full max-w-[737px] max-h-[678px] absolute -bottom-32 lg:bottom-0 lg:right-[8%]"
+          className="w-full h-full max-w-[737px] max-h-[678px] absolute -bottom-32 lg:bottom-0 lg:right-[5%]"
         >
           <Avatar />
         </motion.div>

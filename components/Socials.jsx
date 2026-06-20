@@ -1,44 +1,27 @@
 import Link from "next/link";
-
-import {
-  RiYoutubeLine,
-  RiInstagramLine,
-  RiFacebookLine,
-  RiDribbbleLine,
-  RiGithubLine,
-  RiPinterestLine,
-} from "react-icons/ri";
+import { RiGithubLine, RiLinkedinLine, RiMailLine } from "react-icons/ri";
+import { SiKaggle } from "react-icons/si";
 
 export const socialData = [
   {
-    name: "YouTube",
-    link: "https://youtube.com",
-    Icon: RiYoutubeLine,
-  },
-  {
-    name: "Instagram",
-    link: "https://instagram.com",
-    Icon: RiInstagramLine,
-  },
-  {
-    name: "Facebook",
-    link: "https://facebook.com",
-    Icon: RiFacebookLine,
-  },
-  {
-    name: "Dribbble",
-    link: "https://dribbble.com",
-    Icon: RiDribbbleLine,
-  },
-  {
-    name: "Pinterest",
-    link: "https://pinterest.com",
-    Icon: RiPinterestLine,
-  },
-  {
     name: "Github",
-    link: "https://github.com/sanidhyy/modern-portfolio",
+    link: "https://github.com/RamaP27",
     Icon: RiGithubLine,
+  },
+  {
+    name: "Kaggle",
+    link: "https://www.kaggle.com/ramakprayaga",
+    Icon: SiKaggle,
+  },
+  {
+    name: "LinkedIn",
+    link: "https://www.linkedin.com/in/ramap27/",
+    Icon: RiLinkedinLine,
+  },
+  {
+    name: "Email",
+    link: "mailto:r.prayaga9@gmail.com",
+    Icon: RiMailLine,
   },
 ];
 

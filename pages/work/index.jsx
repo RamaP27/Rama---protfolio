@@ -7,44 +7,54 @@ import { fadeIn } from "../../variants";
 
 const Work = () => {
   return (
-    <div className="h-full bg-primary/30 py-36 flex items-center">
+    <div className="h-screen w-full bg-primary/30 pt-32 pb-24 flex items-start overflow-y-auto scrollbar-thin scrollbar-thumb-accent/20 scrollbar-track-transparent">
       <Circles />
-      <div className="container mx-auto">
-        <div className="flex flex-col xl:flex-row gap-x-8">
-          {/* text */}
-          <div className="text-center flex xl:w-[30vw] flex-col lg:text-left mb-4 xl:mb-0">
-            <motion.h2
-              variants={fadeIn("up", 0.2)}
-              initial="hidden"
-              animate="show"
-              exit="hidden"
-              className="h2 xl:mt-12"
-            >
-              My work <span className="text-accent">.</span>
-            </motion.h2>
-            <motion.p
-              variants={fadeIn("up", 0.4)}
-              initial="hidden"
-              animate="show"
-              exit="hidden"
-              className="mb-4 max-w-[400px] mx-auto lg:mx-0"
-            >
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur
-              tempora eligendi, quisquam tempore sint reiciendis.
-            </motion.p>
-          </div>
-
-          {/* slider */}
-          <motion.div
-            variants={fadeIn("down", 0.6)}
+      <div className="container mx-auto flex flex-col justify-start">
+        {/* Centered top intro */}
+        <div className="text-center max-w-[700px] mx-auto mb-8 shrink-0">
+          <motion.p
+            variants={fadeIn("down", 0.2)}
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="w-full xl:max-w-[65%]"
+            className="text-sm md:text-base text-white/70 leading-relaxed font-light"
           >
-            <WorkSlider />
-          </motion.div>
+            A curated showcase of real-world AI platforms, big data pipelines, IoT hardware systems, and autonomous agent frameworks. Focused on comprehensive case studies.
+          </motion.p>
         </div>
+
+        {/* Section title with left accent border */}
+        <div className="flex flex-col mb-8 border-l-2 border-accent pl-4 text-left shrink-0">
+          <motion.h2
+            variants={fadeIn("up", 0.2)}
+            initial="hidden"
+            animate="show"
+            exit="hidden"
+            className="text-lg md:text-xl font-bold uppercase tracking-[0.2em] text-white"
+          >
+            Featured Case Studies
+          </motion.h2>
+          <motion.p
+            variants={fadeIn("up", 0.3)}
+            initial="hidden"
+            animate="show"
+            exit="hidden"
+            className="text-xs md:text-sm text-white/50 mt-1 font-light"
+          >
+            Highly detailed projects featuring multi-image screenshots, learning telemetry, and self-healing pipelines.
+          </motion.p>
+        </div>
+
+        {/* Vertical Stack List */}
+        <motion.div
+          variants={fadeIn("down", 0.4)}
+          initial="hidden"
+          animate="show"
+          exit="hidden"
+          className="w-full flex-1"
+        >
+          <WorkSlider />
+        </motion.div>
       </div>
       <Bulb />
     </div>
